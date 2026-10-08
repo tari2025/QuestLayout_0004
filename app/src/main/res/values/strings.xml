@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">PAMPraktikum4</string>
-    <string name="Prodi">Teknologi Informasi</string>
+    <string name="prodi">Teknologi Informasi</string>
     <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
     <string name="nama">Deni Lestari</string>
     <string name="alamat">Turi, Sleman</string>

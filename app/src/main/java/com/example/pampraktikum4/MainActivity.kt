@@ -16,3 +16,12 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             PAMPraktikum4Theme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    ActivitasPertama(
+                        modifier = Modifier.padding(innerPadding)
+                    )
+                }
+            }
+        }
+    }
+}

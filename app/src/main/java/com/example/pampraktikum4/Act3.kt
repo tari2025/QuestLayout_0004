@@ -29,11 +29,13 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun ActivitasPertama(modifier: Modifier) {
+    // Kolom utama, padding atas 100dp, rata tengah
     Column (
         modifier = Modifier.padding(top = 100.dp)
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        // Judul: nama prodi
         Text(
             stringResource(R.string.prodi),
             fontSize = 35.sp,

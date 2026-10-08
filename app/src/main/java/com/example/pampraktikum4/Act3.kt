@@ -64,6 +64,7 @@ fun ActivitasPertama(modifier: Modifier) {
 
                 )
                 Spacer(modifier = Modifier.width(30.dp))
+                // Nama dan alamat
                 Column() {
                     Text(
                         stringResource(R.string.nama),

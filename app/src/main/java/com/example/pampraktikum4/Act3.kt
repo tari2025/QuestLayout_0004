@@ -4,6 +4,7 @@ import androidx.compose.foundation.checkScrollableContainerConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fitInside
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.ComposablehorizontalAllignment
@@ -67,5 +68,13 @@ fun ActivitasPertama(modifier: Modifier) {
             )
         }
     }
-
+            Box(
+                modifier = Modifier
+                    .fillMaxsize()
+            )
 }
+                Text(
+                    stringResource(R.string.copy),
+                    modifier = Modifier
+                    .align(alignment.BottomCenter)
+                )

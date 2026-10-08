@@ -6,7 +6,8 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.ComposablehorizontalAllignment
+
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -17,7 +18,7 @@ fun ActivitasPertama(modifier: Modifier) {
     Column (
         modifier = Modifier.padding(top = 100.dp)
             .fillMaxSize(),
-        horizontalAllignment = alignment.CenterHorizontally
+        horizontalAllignment = Alignment.CenterHorizontally
     ) {
         Text(
             stringResource(R.string.prodi),
@@ -33,9 +34,9 @@ fun ActivitasPertama(modifier: Modifier) {
         Card(
             modifier = Modifier
                 .fillMaxWidth(fraction = 1f)
-                .padding(all = 12.dp),
+                .padding(all = 12.dp),image
             colors = CardDefaults.cardColors(
-                ContainerColor = colorResource(R.color.card_0_bg       )
+                containerColor = colorResource(R.color.card_0_bg       )
             )
         )
     }
@@ -45,15 +46,24 @@ fun ActivitasPertama(modifier: Modifier) {
         immage(
             painter = gambar,
             contentDescription = null,
-            modifier = Modifier.size(100).dp).padding(all=5.dp)
+            modifier = Modifier.size(100.dp).padding(all=5.dp)
 
         )
         Spacer(modifier = Modifier.width(30.dp))
         Column() {
-            Text(
+            Text(.padding(all = 5.dp)
                 stringResource("Deni Lestari"),
                 fontSize = 30.sp,
                 fontFamily = FontFamily.Cursive,
+                color = Color.White,
+                modifier = Modifier.padding(top = 15.dp)
+
+            )
+            Text(
+                stringResource(R.string.alamat),
+                fontSize = 20.sp,
+                color = Color.Yellow,
+                modifier = Modifier.padding(top = 10.dp)
             )
         }
     }

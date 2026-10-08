@@ -55,7 +55,7 @@ fun ActivitasPertama(modifier: Modifier) {
                 containerColor = colorResource(R.color.card_0_bg)
             )
         ) {
-            // Foto mahasiswa
+            // menambah Foto
             Row() {
                 val gambar = painterResource(R.drawable.kucinganime)
                 Image(

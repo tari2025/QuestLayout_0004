@@ -20,6 +20,8 @@ class MainActivity : ComponentActivity() {
                     ActivitasPertama(
                         modifier = Modifier.padding(innerPadding)
                     )
+                    // Memanggil fungsi Composable utama dari Act3.kt
+                    // modifier dikirim agar padding dari Scaffold diterapkan
                 }
             }
         }
